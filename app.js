@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 /* Copyright (c) 2015 Yahoo Inc. */
 /*jshint node: true */
 
