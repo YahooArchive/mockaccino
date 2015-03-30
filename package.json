@@ -1,7 +1,7 @@
 {
   "name": "mockaccino",
   "description": "A server that mocks webservices",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "contributors": [
     {
