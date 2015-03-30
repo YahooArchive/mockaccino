@@ -1,4 +1,4 @@
-Mockaccino v.1.0.1
+Mockaccino v.0.0.1
 ==================
 
 A simple Node (and Express.js) server to quickly mock web services responses.
