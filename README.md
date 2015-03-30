@@ -17,7 +17,7 @@ Where CFG is a valid config.
 ## Run standalone
 In the prompt you can run
 ```
-npm i -g mockaccino
+sudo npm i -g mockaccino
 mockaccino --config configFile.json --port 8082
 ```
 or
