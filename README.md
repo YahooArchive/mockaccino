@@ -1,9 +1,11 @@
-Mockaccino v.0.0.1
-==================
+Mockaccino
+===========
 
 A simple Node (and Express.js) server to quickly mock web services responses.
 
 It's configurable to work stand-alone or to be installed in your own Express app under a route.
+
+NPM: [https://www.npmjs.com/package/mockaccino](https://www.npmjs.com/package/mockaccino)
 
 # Use
 ## Run an an Express app
