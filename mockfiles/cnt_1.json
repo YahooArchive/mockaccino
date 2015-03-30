@@ -1,0 +1,8 @@
+{
+    "responseStatus": "ok",
+    "counter": {
+        "foo" : "example",
+        "value" : 1
+    },
+    "message": "Hello World"
+}

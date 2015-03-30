@@ -1,0 +1,8 @@
+{
+    "responseStatus": "ok",
+    "what": {
+        "foo" : "Example function 2",
+        "value" : 2
+    },
+    "message": "Hello World"
+}

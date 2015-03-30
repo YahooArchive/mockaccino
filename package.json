@@ -1,0 +1,37 @@
+{
+  "name": "mockaccino",
+  "description": "A server that mocks webservices",
+  "version": "0.0.1",
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "Riccardo Cocetta",
+      "email": "info@riccardococetta.co.uk"
+    },
+    {
+      "name": "Jason Ellison",
+      "email": "github@nosilleg.com"
+    },
+    {
+      "name": "Ludovic Fardel",
+      "email": "ludovic.fardel@gmail.com"
+    },
+    {
+      "name": "Arif Shanji",
+      "email": "arif.shanji@gmail.com"
+    }
+  ],
+  "scripts": {
+        "test": "mocha tests/unit/libs/*.js"
+  },
+  "private": true,
+  "dependencies": {
+    "express": "~3.3.1",
+    "request": "~2.21.0",
+    "lodash": "~2.4.1",
+    "yargs": "~3.6.0"
+  },
+  "devDependencies": {
+      "mocha": "~1.12.0"
+  }
+}

@@ -1,0 +1,8 @@
+{
+    "responseStatus": "ok",
+    "what": {
+        "foo" : "This is a static response with method post",
+        "value" : "static 2"
+    },
+    "message": "Hello World"
+}

@@ -1,0 +1,65 @@
+
+{
+    "ext_libs": {
+        "example_lib": "/ext_libs/example.js",
+        "counters": "/ext_libs/counters.js"
+    },
+    "queryStringParam": "tc",
+    "mockResponses": {
+        "default": {
+            "/exampleStatic": {
+                "get": {
+                    "type": "staticFile",
+                    "path": "/mockfiles/res_static_1.json"
+                }
+            },
+            "/exampleFunction": {
+                "get": {
+                    "type": "function",
+                    "fn": "example_lib.exampleFunction1"
+                }
+            },
+            "/exampleStaticPost": {
+                "post": {
+                    "type": "staticFile",
+                    "path": "/mockfiles/res_static_post.json"
+                }
+            },
+            "/echo": {
+                "get": {
+                    "type": "function",
+                    "fn": "example_lib.echo"
+                }
+            },
+            "/counter": {
+                "get": {
+                    "type": "function",
+                    "fn": "counters.count"
+                }
+            },
+            "/reset": {
+                "get": {
+                    "type": "function",
+                    "fn": "counters.reset"
+                }
+            }
+        },
+        "tc1": {
+            "/exampleStatic": {
+                "get": {
+                    "type": "staticFile",
+                    "path": "/mockfiles/res_static_2.json"
+                }
+            }
+        },
+        "tc2": {
+            "/exampleStatic": {
+                "get": {
+                    "type": "extend",
+                    "extendFrom": "default",
+                    "obj": {"live": 1, "message": "thanks"}
+                }
+            }
+        }
+    }
+}
