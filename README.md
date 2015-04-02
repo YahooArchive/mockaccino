@@ -8,7 +8,7 @@ It's configurable to work stand-alone or to be installed in your own Express app
 NPM: [https://www.npmjs.com/package/mockaccino](https://www.npmjs.com/package/mockaccino)
 
 # Use
-## Run an an Express app
+## Run as an Express app
 You can create an instance of it (as in app.js), by doing
 ```
 var mockaccino = require('mockaccino')(cfg);
