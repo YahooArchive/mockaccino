@@ -1,7 +1,7 @@
 {
   "name": "mockaccino",
   "description": "A server that mocks webservices",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "license": "MIT",
   "contributors": [
     {
@@ -27,9 +27,6 @@
   "repository" : {
     "type" : "git",
     "url" : "https://github.com/yahoo/mockaccino.git"
-  },
-  "bin": {
-    "mockaccino":"app.js"
   },
   "dependencies": {
     "express": "~3.3.1",

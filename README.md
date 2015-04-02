@@ -15,15 +15,15 @@ var mockaccino = require('mockaccino')(cfg);
 ```
 Where CFG is a valid config.
 ## Run standalone
-In the prompt you can run
+
+Clone the git repo and run
 ```
-sudo npm i -g mockaccino
-mockaccino --config configFile.json --port 8082
+node app --config configFile.json --port 8082
 ```
 or
 
 ```
-mockaccino --help
+node app --help
 ```
 for more information
 # Config
