@@ -17,6 +17,7 @@ var path = require('path'),
     ext_libs = {},
     _ = require('lodash'),
     parent = module.parent.parent || module.parent,
+    embedded = !!module.parent.parent,
     dirname = path.dirname(parent.filename),
     mockUtils = require("./utils.js")(dirname);
 
@@ -164,8 +165,9 @@ function getMockserver(cfg) {
 
     //loads the libraries passed in the config
     loadExternalLibs(cfg);
-
-    app.use(express.bodyParser());
+    if (!embedded) {
+        app.use(express.bodyParser());
+    }
     app.use(express.logger());
 
     app.configure(function () {
