@@ -17,7 +17,7 @@ var path = require('path'),
     ext_libs = {},
     _ = require('lodash'),
     parent = module.parent.parent || module.parent,
-    embedded = !module.parent.parent,
+    embedded = !!module.parent.parent,
     dirname = path.dirname(parent.filename),
     mockUtils = require("./utils.js")(dirname);
 
