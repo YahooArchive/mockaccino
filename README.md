@@ -1,5 +1,6 @@
 Mockaccino
 ===========
+**Please Note**: This repo is no longer maintained and contains known security vulnerabilities. Use at your own risk!
 
 A simple Node (and Express.js) server to quickly mock web services responses.
 
