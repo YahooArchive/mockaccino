@@ -19,6 +19,7 @@ var path = require('path'),
     parent = module.parent.parent || module.parent,
     embedded = !!module.parent.parent,
     dirname = path.dirname(parent.filename),
+    cors = require('cors'),
     mockUtils = require("./utils.js")(dirname);
 
 
@@ -48,7 +49,7 @@ function handleExtendEndpoint(req, res, cfgItem, key, method, cfg) {
  * Serves the static file associated with a key
  * @param   {object} req The request obj
  * @param   {object} res The response object
- * @param   {object} cfgItem the Config item associated with the enpoint you're treating now
+ * @param   {object} cfgItem the Config item associated with the endpoint you're treating now
  * @param   {string} key A key in the mockResponses object
  */
 function serveStaticFileForKey(req, res, cfgItem, key, method) {
@@ -59,11 +60,11 @@ function serveStaticFileForKey(req, res, cfgItem, key, method) {
 
 
 /**
- * Serves the static file associated with a key
+ * Serves an object with a status code
  * @param   {object} req The request obj
  * @param   {object} res The response object
- * @param   {object} cfgItem the Config item associated with the enpoint you're treating now
- * @param   {string} key A key in the mockResponses object
+ * @param   {number} statuscode the statuscode you want to return
+ * @param   {object} the object to be sent
  */
 function serveObject(req, res, statusCode, object) {
     log("[Mockaccino] Serving object");
@@ -169,6 +170,7 @@ function getMockserver(cfg) {
         app.use(express.bodyParser());
     }
     app.use(express.logger());
+    app.use(cors());
 
     app.configure(function () {
         log("[Mockaccino] Creating routes");

@@ -1,7 +1,7 @@
 {
   "name": "mockaccino",
   "description": "A server that mocks webservices",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "license": "MIT",
   "contributors": [
     {
@@ -22,19 +22,20 @@
     }
   ],
   "scripts": {
-        "test": "mocha tests/unit/libs/*.js"
+    "test": "mocha tests/unit/libs/*.js"
   },
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/yahoo/mockaccino.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yahoo/mockaccino.git"
   },
   "dependencies": {
+    "cors": "^2.8.3",
     "express": "~3.3.1",
-    "request": "~2.21.0",
     "lodash": "~2.4.1",
+    "request": "~2.21.0",
     "yargs": "~3.6.0"
   },
   "devDependencies": {
-      "mocha": "~1.12.0"
+    "mocha": "~1.12.0"
   }
 }
